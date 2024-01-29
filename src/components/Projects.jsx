@@ -1,35 +1,38 @@
-import React from "react";
-
 const Projects = () => {
+  const projects = [
+    { id: 1, name: 'Etch-A-Sketch', screenshot: 'etchasketch-screenshot.png', description: 'My twist on the nostalgic Etch-a-Sketch toy.This interactive web application brings the nostalgic look to your browser.Letting you create and save your drawings with adjustable drawingboard sizes and color.' },
+    { id: 2, name: 'Project 2', screenshot: 'project2-screenshot.png', description: '...' },
+    // Add more projects as needed
+  ];
+
   return (
     <main>
       <div className="main-wrapper">
         <h2>My work</h2>
         <div className="project-container">
-          {[1, 2, 3, 4, 5, 6, 7].map((index) => (
-            <section key={index} className="project card glass-effect">
-              <div className={`screenshot color${index}`}>
-                screenshot of project
+          {projects.map((project) => (
+            <section key={project.id} className="project card glass-effect">
+              <div className={`screenshot color${project.id}`}>
+                <img
+                  src={`/images/${project.screenshot}`}
+                  alt={`Screenshot of ${project.name}`}
+                />
               </div>
-              <div className="content">
                 <div className="title">
-                  <h3>Project name</h3>
-                  <div className="project-icon-container">
-                    <img
-                      className="project-icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                      alt="GitHub icon"
-                    />
-                    <img
-                      src="imgs/open-in-new.svg"
-                      alt="Icon open external link"
-                    />
-                  </div>
+                  <h3>{project.name}</h3>
+                  {/* ... Other project details */}
                 </div>
-                <p className="description">
-                  Short description of the project. Just a couple of sentences
-                  will do.
-                </p>
+              <div className="content">
+                <p className="description">{project.description}</p>
+              </div>
+              <div className="project-icon-container">
+              <a href="https://github.com/codetwentyfive/Etch-A-Sketch" target="_blank">
+            <img
+              className="icon"
+              src="/icons/icons8-github-50.png"
+              alt="GitHub icon"
+            />
+          </a>
               </div>
             </section>
           ))}
