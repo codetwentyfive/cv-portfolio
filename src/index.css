@@ -33,7 +33,7 @@ ul {
   padding: 0;
   font-weight: normal;
   font-stretch: condensed;
-  font-family: "Playfair";
+  font-family: "Playfair","Lato", sans-serif;;
   color: #ffffff;
 }
 
@@ -336,6 +336,7 @@ section.project div.content {
   max-width: auto;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 50px;
 
 }
 
@@ -352,11 +353,14 @@ section.project div.title {
 }
 
 .project-icon-container {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
   display: flex;
   align-items: center;
-  justify-content: end;
   gap: 10px;
   padding: 20px;
+  z-index: 1000;
 }
 
 div.footer-icon-container {
