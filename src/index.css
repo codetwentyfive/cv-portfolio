@@ -4,7 +4,7 @@ html {
 }
 @font-face {
   font-family: "Matrix";
-  src: url("../../public/fonts/matrix.ttf") format("truetype");
+  src: url("/public/fonts/matrix.ttf") format("truetype");
 }
 
 *,
@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  cursor: url("../../public/images/cursor.png"), auto;
+  cursor: url("/public/images/cursor.png"), auto;
 }
 
 body,
