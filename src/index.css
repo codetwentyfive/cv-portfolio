@@ -33,7 +33,7 @@ ul {
   padding: 0;
   font-weight: normal;
   font-stretch: condensed;
-  font-family: "Playfair","Lato", sans-serif;;
+  font-family: "Playfair", "Lato", sans-serif;
   color: #ffffff;
 }
 
@@ -174,81 +174,13 @@ section.about-me {
   margin-right: 60px;
 }
 
-@media (max-width: 1024px) {
-  div.main-photo-container {
-    max-width: 400px !important;
-    min-height: 400px !important;
-  }
-  section.about-me{
-    max-width: 90%;
-    padding: 20px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  div.main-photo-container {
-    margin-top: 30px !important;
-  }
-}
-
-@media (max-width: 500px) {
-  div.triangle {
-    display: none;
-  }
-
-  div.rectangle {
-    width: 100%;
-  }
-  header {
-  }
-
-  section.about-me {
-    margin: 30px;
-  }
-
-  div.main-photo-container {
-    margin: 30px !important;
-  }
-  .project-container {
-    justify-items: center;
-  }
-  section.project {
-    width: 90vw !important;
-  }
-
-  main {
-    padding: 30px !important;
-    align-items: center;
-  }
-  :root {
-    --bg-color: none;
-  }
-}
-
-@media (max-width: 320px) {
-  section.project {
-    width: 90vw !important;
-  }
-  :root {
-    --bg-color: none;
-  }
-}
-
 h1.name {
   padding: 10px;
 }
-div.main-photo-container:hover{
+div.main-photo-container:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
   transition: transform 0.6s ease-in-out;
-
 }
 div.main-photo-container {
   background-image: url("/public/images/pfp.jpg");
@@ -266,7 +198,6 @@ div.main-photo-container {
   margin-right: 20px;
   position: relative;
   z-index: 2;
-  
 }
 
 section.about-me h2 {
@@ -288,16 +219,19 @@ section.about-me h2 {
   cursor: pointer;
 }
 
-div.icon-container {
-  padding-top: 20px;
+.contact-info {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 30px;
-
+  padding-top: 1em;
 }
-div.icon-container p{
+div.icon-container {
+  display: flex;
+  gap: 30px;
+}
+.contact-text {
   font-size: 1em;
+  padding-right: 1em;
 }
 
 .project-icon {
@@ -322,12 +256,11 @@ main div.project-container {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
   justify-items: center;
-
 }
 
 section.project {
   width: 400px;
-  
+
   box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
@@ -338,9 +271,8 @@ section.project:hover {
   cursor: pointer;
 }
 
-
 section.project div.screenshot {
-  height: auto ;
+  height: auto;
   object-fit: contain;
   padding: 30px;
   text-align: center;
@@ -354,7 +286,6 @@ section.project div.content {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 50px;
-
 }
 
 p.description {
@@ -399,7 +330,9 @@ footer {
 footer section {
   color: white;
 }
-
+footer h2 {
+  text-align: center;
+}
 footer p,
 footer address,
 footer div.email,
@@ -425,4 +358,75 @@ img.pfp {
   width: 300px;
   object-fit: contain;
   height: auto;
+}
+
+@media (max-width: 1024px) {
+  div.main-photo-container {
+    max-width: 400px !important;
+    min-height: 400px !important;
+  }
+  section.about-me {
+    max-width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.main-photo-container {
+    margin-top: 30px !important;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  div.triangle {
+    display: none;
+  }
+
+  div.rectangle {
+    width: 100%;
+  }
+  header {
+  }
+
+  section.about-me {
+    margin: 30px;
+  }
+
+  div.main-photo-container {
+    margin: 30px !important;
+  }
+  .project-container {
+    justify-items: center;
+  }
+  section.project {
+    width: 90vw !important;
+  }
+
+  main {
+    padding: 30px !important;
+    align-items: center;
+  }
+  :root {
+    --bg-color: none;
+  }
+}
+
+@media (max-width: 320px) {
+  section.project {
+    width: 90vw !important;
+  }
+  :root {
+    --bg-color: none;
+  }
 }
