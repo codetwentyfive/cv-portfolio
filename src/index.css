@@ -381,10 +381,17 @@ img.pfp {
 
   div.main-photo-container {
     margin-top: 30px !important;
+    transform: scale(0.8);
   }
   .contact-info {
     display: flex;
     flex-direction: column;
+  }
+  .about-me{
+    font-size: 1.1em;
+    max-width: fit-content;
+    line-height: 1.5;
+    margin: 0 auto;
   }
 }
 
