@@ -246,7 +246,7 @@ div.main-photo-container:hover{
 
 }
 div.main-photo-container {
-  background-image: url("../../public/images/pfp.jpg");
+  background-image: url("/public/images/pfp.jpg");
   max-width: 550px;
   min-height: 550px;
   float: left;
