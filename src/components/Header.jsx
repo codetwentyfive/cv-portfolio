@@ -10,14 +10,14 @@ const Header = () => {
         <h2>About me</h2>
         <p className="about-me">
           Dedicated and detail-oriented, aspiring to build a dynamic career in
-          web development with expertise in both front-end and back-end. Possess
-          a strong foundation in React, JavaScript, HTML, CSS, and Python,
+          web development with expertise in both front-end and back-end.<br/>Possess
+          a strong foundation in JavaScript, HTML, CSS, and Python,
           coupled with experience in modern frameworks such as React for
-          front-end development and Node.js for back-end development. Adept at
+          front-end development and Node.js for back-end development.<br/>Adept at
           creating responsive and user-friendly web applications
         </p>
         <div className="icon-container">
-          <p className="contact-text">Contact me with:</p>
+          <p className="contact-text">Contact:</p>
           <a href="tel:+123456789">
             <img
               className="icon"
