@@ -11,12 +11,13 @@ const Header = () => {
         <p className="about-me">
           Dedicated and detail-oriented, aspiring to build a dynamic career in
           web development with expertise in both front-end and back-end. Possess
-          a strong foundation in HTML, CSS, and JavaScript, coupled with
-          experience in modern frameworks such as React for front-end
-          development and Node.js for back-end development. Adept at creating
-          responsive and user-friendly web applications
+          a strong foundation in React, JavaScript, HTML, CSS, and Python,
+          coupled with experience in modern frameworks such as React for
+          front-end development and Node.js for back-end development. Adept at
+          creating responsive and user-friendly web applications
         </p>
         <div className="icon-container">
+          <p className="contact-text">Contact me with:</p>
           <a href="tel:+123456789">
             <img
               className="icon"
