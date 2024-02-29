@@ -14,7 +14,7 @@ const Projects = () => {
       link: "https://github.com/codetwentyfive/dumlping-haven",
       screenshot: "dumplinghaven-screenshot.png",
       description:
-        'The project showcases my skills in layout management and asset creation, utilizing stable diffusion to generate captivating dumpling visuals. Dumpling Haven, a fictional, "possibly future" dumpling restaurant, served as the canvas for my design passion, merging aesthetics with the anticipation of culinary possibilities.',
+        'The project showcases my skills in layout management and asset creation, utilizing stable diffusion to generate captivating dumpling visuals. Dumpling Haven, a fictional, "possibly future" dumpling restaurant, served as the canvas for ermerging aesthetics with the anticipation of culinary possibilities.',
     },
     {
       id: 4,
