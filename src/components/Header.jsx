@@ -21,7 +21,7 @@ const Header = () => {
         <div className="contact-info">
           <p className="contact-text">Contact:</p>
           <div className="icon-container">
-            <a href="tel:+123456789">
+            <a href="tel:01573 5203036">
               <img
                 className="icon"
                 src="/icons/icons8-phone-50.png"
